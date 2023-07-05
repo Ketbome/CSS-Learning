@@ -1,0 +1,164 @@
+#titulo {
+  color: red;
+}
+
+p.texto {
+  color: slateblue;
+}
+
+p.especial {
+  color: mediumseagreen;
+}
+
+div p {
+  color: aquamarine;
+}
+
+div h2, div h3 {
+  color: brown;
+}
+
+* {
+  font-size: 24px;
+}
+
+/* .color {
+  color: #000000;
+} */
+
+/* .color {
+  color: rgb(0, 255, 0);
+} */
+
+.color {
+  /* border: 5px black solid; */
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+#fondo {
+  background: #f00 url('coffee.png') repeat-y center bottom;
+  height: 4%;
+  background-size: 200px 200px;
+}
+
+.margen {
+  background-color: chocolate;
+  margin: 15px 20px 25px 30px; /* Fuera del elemento */
+  padding: 20px 15px 30px 25px; /* Dentro del elemento */
+  border: solid 1px black;
+  height: 100px;
+  width: 50px;
+  overflow: scroll; /* hidden lo que esta afuera del elemento lo oculta, por defecto viene en visible, Tambien se puede poner un scroll*/
+  outline: 1px solid red;
+}
+
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify; /* center, left, right */
+  text-decoration: overline; /* Una linea arriba del texto entre otras combinaciones */
+  text-shadow: 3px 5px 5px blue; /* Una copia detras de las letras, la 3ra variable es un difuminado */
+  margin: 15px 0px;
+}
+
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: red;
+}
+
+ul {
+  background-color: cyan;
+  list-style-type: none;
+  padding-left: 0;
+  /* list-style-position: inside; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: solid 1px #eee;
+  padding: 5px;
+}
+
+th {
+  background-color: tomato;
+  color: white;
+  text-align: left;
+}
+
+tr:nth-child(odd) { /* odd o even */
+  /* Hace saltos en orden */
+  background-color: #ff0;
+}
+
+tr:hover {
+  background-color: #aaa; /* Si se pasa mouse por encima cambia de color el fondo */
+  cursor: pointer; /* Cambio de cursor */
+}
+
+span {
+  display: block;
+  /* display: none; */  /* Este oculta al igual que el visibility hidden */
+  /* visibility: hidden; */
+  max-width: 300px;
+  background-color: #f00;
+}
+
+.inline {
+  display: inline;
+}
+
+#position {
+  position: sticky; 
+  left: 20px;
+  top: 25px;
+}
+
+.left {
+  float: left;
+  width: 200px;
+}
+
+.right {
+  float: right;
+}
+
+.container {
+  height: 200px;
+}
+
+.column {
+  margin: 0;
+  padding: 10px 0;
+  width: 33.3%;
+}
+
+.inline-block {
+  display: inline-block; /* Al ser inline block podemos darle se le puede asignar width y height */
+  height: 55px;
+  background-color: #aaa;
+}
+
+.center {
+  padding: 50px 0;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+}

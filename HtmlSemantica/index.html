@@ -19,6 +19,7 @@
         <meta name="theme-color" content="#000000"> <!-- Color de la barra de navegacion -->
 
         <link rel="icon" type="monster.png" href="./monster.png"> <!-- Icono de la pagina -->
+
     </head>
     <body>
         <header>
@@ -30,6 +31,26 @@
                 <a href="https://github.com/Ketbome" target="_blank" rel="noreferrer" >Github</a> <!-- Enlace externo -->
             </nav>
         </header>
+
+        <dialog id="dialog">
+            <h2>Modal</h2>
+            <p>Este es un modal</p>
+            <button id="hide">Cerrar</button>
+        </dialog>
+
+        <button id="show">Abrir modal</button>
+
+        <script>
+            window.show.addEventListener('click', () => {
+                window.dialog.showModal()
+            })
+
+            window.hide.addEventListener("click", () => {
+                window.dialog.close()
+            })
+        </script>
+
+        <video controls autoplay muted loop src="./video.mp4" width="400px"></video>
         
         <main>
 
